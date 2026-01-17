@@ -1,0 +1,19 @@
+let speed = 50;
+let isRunning = false;
+
+document.getElementById('speed-up').onclick = function() {
+    speed = Math.min(100, speed + 10);
+    alert('当前速度：' + speed + '%');
+};
+
+document.getElementById('speed-down').onclick = function() {
+    speed = Math.max(0, speed - 10);
+    alert('当前速度：' + speed + '%');
+};
+
+document.getElementById('pause').onclick = function() {
+    isRunning = !isRunning;
+    document.querySelector('.status').textContent = 
+        isRunning ? '状态: 运行中' : '状态: 已暂停';
+    this.textContent = isRunning ? '暂停' : '继续';
+};

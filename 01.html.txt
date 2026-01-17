@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GLOWFORGE设计器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🎯 GLOWFORGE激光雕刻设计器</h1>
+    <div class="canvas">设计区域</div>
+    <div class="controls">
+        <button id="speed-up">加速</button>
+        <button id="speed-down">减速</button>
+        <button id="pause">暂停/继续</button>
+    </div>
+    <p class="status">状态: 就绪</p>
+    <script src="script.js"></script>
+</body>
+</html>
